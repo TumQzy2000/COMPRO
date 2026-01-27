@@ -18,7 +18,6 @@ void CheckPassword()
 	if ((pw >= 1000) && (pw <= 9999))
 	{
 		printf ("Your password is already set.\n");
-		exit(0);
 	}
 	else
 	{
@@ -38,6 +37,7 @@ main()
 		if (choice == '1')
 		{
 			CheckPassword();
+			exit(0);
 		}
 		
 		else if (choice == '2')
