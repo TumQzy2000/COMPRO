@@ -11,7 +11,8 @@ main()
 	scanf ("%d",&price);
 	
 	while(1)
-	{	
+		{	
+	
 	printf ("Enter coupon code : ");
 	scanf ("%d",&code);
 
@@ -48,8 +49,10 @@ main()
 	{
 		printf ("The coupon code is wrong !! Please try again.\n");
 	}
+	
 	}
 	
+	// ===== Summary ===== //
 	total = price - dis + ship;
 	printf ("Discout (Baht) : %d\n",dis);
 	printf ("Shipping cost (Baht) : %d\n",ship);
