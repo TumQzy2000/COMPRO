@@ -30,6 +30,7 @@ int main() {
         printf("%c\n", choice);
         if (choice == '1') {
             Fibonacci();
+            exit(0);
         } else if (choice == '2') {
             printf("Thank you.\n");
             break;
