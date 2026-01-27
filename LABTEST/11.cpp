@@ -1,18 +1,23 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "conio.h"
 
-int main() {
-    int pwd, attempts = 0;
-    while (attempts < 3) {
+main() {
+    int pwd, count = 0;
+    while (count < 3) 
+	{
         printf("Enter Password: ");
         scanf("%d", &pwd);
-        if (pwd == 6453) {
+        if (pwd == 6453) 
+		{
             printf("*** Open ***\n");
-            return 0;
-        } else {
+            break;
+        } 
+		else 
+		{
             printf("Wrong\n");
-            attempts++;
+            count++;
         }
     }
     printf("*** Bye Bye ***\n");
-    return 0;
+    getch();
 }

@@ -1,18 +1,22 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "conio.h"
 
-float myAbsolute(float input) {
+float myAbsolute(float input) 
+{
     if (input < 0) return -input;
     return input;
 }
 
-float getDecimalPart(float input) {
+float getDecimalPart(float input) 
+{
     int i = (int)input;
     float dec = input - i;
-    if (dec < 0) return -dec; // ??????????????????????????????
+    if (dec < 0) return -dec; 
     return dec;
 }
 
-int main() {
+main() 
+{
     float val;
     printf("Enter value: ");
     scanf("%f", &val);
@@ -22,5 +26,5 @@ int main() {
     printf("Integer Part: %d\n", (int)val);
     printf("Decimal Part: %.2f\n", getDecimalPart(val));
     
-    return 0;
+    getch();
 }

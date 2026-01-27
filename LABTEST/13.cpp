@@ -1,15 +1,20 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "conio.h"
 
-float Req(char option, int R1, int R2, int R3) {
-    if (option == 's') {
+float Req(char option, int R1, int R2, int R3) 
+{
+    if (option == 's') 
+	{
         return (float)(R1 + R2 + R3);
-    } else if (option == 'p') {
+    } 
+	else if (option == 'p') 
+	{
         return 1.0 / ((1.0/R1) + (1.0/R2) + (1.0/R3));
     }
-    return 0;
 }
 
-int main() {
+main() 
+{
     char opt;
     int r1, r2, r3;
     printf("Enter Option (s or p): ");
@@ -19,5 +24,5 @@ int main() {
     printf("Enter R3: "); scanf("%d", &r3);
     
     printf("Req = %.2f Ohm\n", Req(opt, r1, r2, r3));
-    return 0;
+    getch();
 }

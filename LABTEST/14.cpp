@@ -1,18 +1,20 @@
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
 
 void Menu() {
     printf("**************\nMenu\n**************\n");
     printf("a. Cylinder\nb. Sphere\nc. Cone\nq. Exit\n**************\n");
 }
 
-int main() {
+main() 
+{
     char choice;
     float r, h, v;
     float pi = 3.14;
     
-    while(1) {
+    while(1) 
+	{
         Menu();
         printf("Enter Menu: ");
         scanf(" %c", &choice);
@@ -41,5 +43,5 @@ int main() {
         getch();
         system("cls");
     }
-    return 0;
+    getch();
 }

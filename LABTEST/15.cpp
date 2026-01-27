@@ -1,25 +1,33 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "conio.h"
 
-int myRoundDown(float input) {
+int myRoundDown(float input) 
+{
     int i = (int)input;
     if (input >= 0) return i;
-    else {
+    else 
+	{
         if (input == i) return i;
         else return i - 1;
     }
 }
 
-int myRoundUp(float input) {
+int myRoundUp(float input)
+ {
     int i = (int)input;
-    if (input >= 0) {
+    if (input >= 0) 
+	{
         if (input == i) return i;
         else return i + 1;
-    } else {
+    } 
+	else 
+	{
         return i;
     }
 }
 
-int main() {
+main() 
+{
     float val;
     printf("Enter value: ");
     scanf("%f", &val);
@@ -28,5 +36,5 @@ int main() {
         printf("Positive %.1f: Down = %d, Up = %d\n", val, myRoundDown(val), myRoundUp(val));
     else
         printf("Negative %.1f: Down = %d, Up = %d\n", val, myRoundDown(val), myRoundUp(val));
-    return 0;
+    getch();
 }
