@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
 
 void Menu() {
     printf("***Menu***\n");
@@ -8,9 +8,11 @@ void Menu() {
     printf("Press 2 to exit.\n");
 }
 
-void DrawTriangle() {
+void DrawTriangle() 
+{
     int n, i, j;
-    while(1) {
+    while(1) 
+	{
         printf("Enter N: ");
         scanf("%d", &n);
         if (n > 1) break;
@@ -18,30 +20,43 @@ void DrawTriangle() {
     }
     printf("Enter height: %d\n", n); 
     
-    for (i = 1; i <= n; i++) {
-        for (j = 1; j <= 2 * i - 1; j++) {
+	for (i = 1; i <= n; i++)
+    {
+        for (j = 1; j <= n - i; j++)
+        {
+            printf(" ");
+        }
+
+        for (j = 1; j <= 2 * i - 1; j++)
+        {
             printf("#");
         }
         printf("\n");
     }
 }
 
-int main() {
+main() 
+{
     char choice;
-    while (1) {
+    while (1) 
+	{
         Menu();
         choice = getch();
         printf("%c\n", choice);
-        if (choice == '1') {
-            DrawTriangle();
-        } else if (choice == '2') {
+        if (choice == '1') 
+		{
+             DrawTriangle();
+        } else if (choice == '2') 
+		{
             printf("Thank you.\n");
             break;
-        } else {
+        } 
+		else 
+		{
             printf("Wrong choice. Please try again.\n");
         }
         getch();
         system("cls");
     }
-    return 0;
+    getch();
 }
