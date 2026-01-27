@@ -50,6 +50,7 @@ main()
 		if (choice == '1')
 		{
 			PrimeNumber();
+			exit(0);
 		}
 		
 		else if (choice == '2')
