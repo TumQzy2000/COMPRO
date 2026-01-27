@@ -10,29 +10,29 @@ void Menu() {
 
 void DrawTriangle() 
 {
-    int n, i, j;
-    while(1) 
+	int n,i,j;
+	while(1)
 	{
-        printf("Enter N: ");
-        scanf("%d", &n);
-        if (n > 1) break;
-        printf("Please try again.\n");
-    }
-    printf("Enter height: %d\n", n); 
-    
-	for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= n - i; j++)
-        {
-            printf(" ");
-        }
-
-        for (j = 1; j <= 2 * i - 1; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
-    }
+		printf ("Enter N : ");
+		scanf ("%d",&n);
+		if (n>1) break;
+		printf ("Please try again.\n");
+	}
+	
+	printf ("Enter height : \n",n);
+	
+	for (i=1;i<=n;i++)
+	{
+		for (j=1;j<=n-i;j++)
+		{
+			printf (" ");
+		}
+		for (j=1;j<=2*i-1;j++)
+		{
+			printf ("#");
+		}
+		printf ("\n");
+	}
 }
 
 main() 
