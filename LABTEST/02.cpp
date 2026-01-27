@@ -11,17 +11,17 @@ void Menu()
 
 void Fibonacci()
 {
-	int n,i;
-	int x1 = 0, x2 = 1, Fi;
-	printf ("Enter N : ");
-	scanf ("%d",&n);
-	
-	for(i=1;i<=n;i++)
-	{
-		printf ("%d ",x1);
-		Fi = x1+ x2;
-		x1 = x2;
-		x2 =Fi;
+ 	int n,i;
+ 	int x1 = 0,x2 = 1,Fi;
+ 	printf ("Enter N : ");
+ 	scanf ("%d",&n);
+ 	
+ 	for (i=1;i<=n;i++)
+ 	{
+ 		printf ("%d ",x1);
+ 		Fi = x1 + x2;
+ 		x1 = x2;
+ 		x2 = Fi;
 	}
 	printf ("\n");
 }
@@ -38,11 +38,14 @@ main()
 		if (choice == '1')
 		{
 			Fibonacci();
+			exit(0);
+			
 		}
 		
 		else if (choice == '2')
 		{
 			printf ("Thank you.\n");
+			break;
 		}
 		
 		else 

@@ -15,15 +15,15 @@ void CheckPassword()
 	printf ("Create your password : ");
 	scanf ("%d",&pw);
 	
-	if ((pw >= 1000) && (pw <= 9999))
+	if ((pw <= 9999) && (pw >= 1000))
 	{
 		printf ("Your password is already set.\n");
-		exit(0);
 	}
+	
 	else
 	{
 		printf ("Your password is against the rule. Please try again.\n");
-	} 
+	}
 }
 
 main()
@@ -38,6 +38,7 @@ main()
 		if (choice == '1')
 		{
 			CheckPassword();
+			exit(0);
 		}
 		
 		else if (choice == '2')
