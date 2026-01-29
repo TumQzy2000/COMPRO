@@ -11,26 +11,31 @@ void Menu()
 
 void DrawX() 
 {
-    int n, i, j;
-    while(1) 
+	int n,i,j;
+	while(1)
 	{
-        printf("Enter height: ");
-        scanf("%d", &n);
-        if (n >= 3 && n % 2 != 0) break;
-        printf("Please try again.\n");
-    }
-
-    for (i = 1; i <= n; i++) 
+		printf ("Enter height : ");
+		scanf ("%d",&n);
+		if (n >= 3 && n%2 != 0); break;
+		printf ("Please try again.\n");
+	}
+	
+	for (i=1;i<=n;i++)
 	{
-        for (j = 1; j <= n; j++) 
+		for (j=1;j<=n;j++)
 		{
-            if (j == i || j == (n - i + 1))
-                printf("*");
-            else
-                printf(" ");
-        }
-        printf("\n");
-    }
+			if (j == i || j == (n-i+1))
+			{
+				printf ("*");
+			}
+			
+			else 
+			{
+				printf (" ");
+			}
+		}
+		printf ("\n");
+	}
 }
 
 main() 

@@ -21,13 +21,14 @@ void SummaryInterest()
     
     printf("Month\tProfit (Baht)\n");
     
-    while (sum_profit < principal) 
-	{
-        month++;
-        profit = principal * (rate / 100.0);
-        sum_profit += profit;
-        printf("%d\t%.0f\n", month, profit);
-    }
+ 	while (sum_profit < principal)
+ 	{
+ 		month++;
+		profit = principal * (rate/100.0);
+		sum_profit += profit;
+		printf ("%d\t %.0f\n",month,profit);	
+	}
+    
     printf("Sum profit = %.0f Baht.\n", sum_profit);
     printf("The interest will equal to the principal within %d months.\n", month);
 }
