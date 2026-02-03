@@ -9,7 +9,7 @@ void Menu()
     printf("Press 2 to exit.\n");
 }
 
-void DrawX() 
+void DrawX()
 {
 	int n,i,j;
 	while(1)
@@ -20,15 +20,14 @@ void DrawX()
 		printf ("Please try again.\n");
 	}
 	
-	for (i = 1; i <= n; i++)
+	for (i = 1;i <= n;i++)
 	{
-		for (j = 1; j <= n; j++)
+		for (j = 1;j <= n;j++)
 		{
 			if (j == i || j == (n-i+1))
 			{
 				printf ("*");
 			}
-			
 			else
 			{
 				printf (" ");
@@ -50,6 +49,7 @@ main()
         if (choice == '1') 
 		{
             DrawX();
+            break;
         } 
 		else if (choice == '2') 
 		{

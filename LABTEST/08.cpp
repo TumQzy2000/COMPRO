@@ -10,53 +10,58 @@ void Menu() {
 
 void DrawTriangle() 
 {
-    int n, i, j;
-    while(1) 
+	int n,i,j;
+	printf ("Enter N : ");
+	scanf ("%d",&n);
+	
+	while(n <= 1)
 	{
-        printf("Enter N: ");
-        scanf("%d", &n);
-        if (n > 1) break;
-        printf("Please try again.\n");
-    }
-    printf("Enter height: %d\n", n); 
-    
-	for (i = n; i >= 1; i--)
-    {
-        for (j = 1; j <= n - i; j++)
-        {
-            printf(" ");
-        }
-
-        for (j = 1; j <= 2 * i - 1; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
-    }
+		printf ("Please try agian.\n");
+		printf ("Enter height : ");
+		scanf ("%d",&n);
+	}
+	
+	for (i = n;i >= 1;i--)
+	{
+		for (j = 1;j <= n-i;j++)
+		{
+			printf (" ");
+		}
+		for (j = 1;j <= 2*i-1;j++)
+		{
+			printf ("#");
+		}
+		printf ("\n");
+	}	
 }
 
-main() 
+main()
 {
-    char choice;
-    while (1) 
+	char choice;
+	while(1)
 	{
-        Menu();
-        choice = getch();
-        printf("%c\n", choice);
-        if (choice == '1') 
+		Menu();
+		choice = getch();
+		printf ("%c\n",choice);
+		
+		if (choice == '1')
 		{
-             DrawTriangle();
-        } else if (choice == '2') 
+			DrawTriangle();
+			break;
+		}
+		
+		else if (choice == '2')
 		{
-            printf("Thank you.\n");
-            break;
-        } 
+			printf ("Thank you.");
+			break;
+		}
+		
 		else 
 		{
-            printf("Wrong choice. Please try again.\n");
-        }
-        getch();
-        system("cls");
-    }
-    getch();
+			printf ("Wrong choice.Please try again.\n");
+		}
+		getch();
+		system ("cls");
+	}
+	getch();
 }
