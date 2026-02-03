@@ -28,13 +28,17 @@ int myRoundUp(float input)
 
 main() 
 {
-    float val;
-    printf("Enter value: ");
-    scanf("%f", &val);
-    
-    if (val >= 0)
-        printf("Positive %.1f: Down = %d, Up = %d\n", val, myRoundDown(val), myRoundUp(val));
-    else
-        printf("Negative %.1f: Down = %d, Up = %d\n", val, myRoundDown(val), myRoundUp(val));
-    getch();
+   float val;
+   printf ("Enter value : ");
+   scanf ("%f",&val);
+   
+   if (val >= 0)
+   {
+   		printf ("Positive %.1f : Down = %d, Up =%d\n",val,myRoundDown(val),myRoundUp(val));
+   }
+   else
+   {
+   		printf ("Negative %.1f : Down = %d, Up = %d\n",val,myRoundDown(val),myRoundUp(val));
+   }
+   getch();
 }

@@ -4,8 +4,14 @@
 
 void Menu() 
 {
-    printf("**************\nMenu\n**************\n");
-    printf("a. Rectangle\nb. Triangle\nc. Circle\nq. Exit\n**************\n");
+  	printf ("**************\n");
+  	printf ("     Menu\n");
+  	printf ("**************\n");
+  	printf ("a. Rectangle\n");
+  	printf ("b. Triangle\n");
+  	printf ("c. Circle\n");
+  	printf ("q. Exit\n");
+  	printf ("**************\n");
 }
 
 main() 
@@ -27,6 +33,7 @@ main()
             printf("Enter length: "); scanf("%f", &l);
             area = w * l;
             printf("Area = %.3f\n", area);
+            printf ("--------------\n");
         } 
 		else if (choice == 'b') 
 		{
@@ -35,6 +42,7 @@ main()
             printf("Enter height: "); scanf("%f", &h);
             area = 0.5 * b * h;
             printf("Area = %.3f\n", area);
+            printf ("--------------\n");
         } 
 		else if (choice == 'c') 
 		{
@@ -42,6 +50,7 @@ main()
             printf("Enter radius: "); scanf("%f", &r);
             area = pi * r * r;
             printf("Area = %.3f\n", area);
+            printf ("--------------\n");
         } 
 		else if (choice == 'q') 
 		{

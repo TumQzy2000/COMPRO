@@ -18,7 +18,7 @@ void SummaryInterest()
 	scanf ("%f",&principal);
 	printf ("Enter monthly profit rate (%%) : ");
 	scanf ("%f",&rate);
-	
+	printf ("--------------------\n");
 	printf ("Month\t profit (Baht)\n");
 	
 	while(sum_profit < principal)
@@ -31,6 +31,7 @@ void SummaryInterest()
 	
 	printf ("Sum profit = %.0f\n",sum_profit);
 	printf ("The interest will equal to the principal within %d months.\n",month);
+	printf ("--------------------\n");
 }
 
 main() 

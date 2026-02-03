@@ -1,27 +1,27 @@
 #include "stdio.h"
 #include "conio.h"
 
-void printStar(int max_stars) 
+void printStar(int max_stars)
 {
 	int i,j;
-	for (i = 1; i <= max_stars; i++)
+	for (i = 1;i <= max_stars;i++)
 	{
-		for (j = 0; j < i; j++) printf ("*");
+		for (j = 0;j < i;j++) printf ("*");
 		printf ("\n");
 	}
-	for (i = max_stars - 1; i >= 1; i--)
+	for (i = max_stars - 1;i >= 1;i--)
 	{
-		for (j = 0; j < i; j++) printf ("*");
+		for (j = 0;j < i;j++) printf ("*");
 		printf ("\n");
 	}
 }
 
-main() 
+main()
 {
 	int n;
 	while(1)
 	{
-		printf ("Enter N : ");
+		printf ("Enter number : ");
 		scanf ("%d",&n);
 		if (n > 0) break;
 		printf ("Please try again.\n");

@@ -23,6 +23,7 @@ int max(int num1, int num2, int num3, int num4, int num5) {
 main() 
 {
     int n1, n2, n3, n4, n5;
+    
     printf("Enter Number1: "); scanf("%d", &n1);
     printf("Enter Number2: "); scanf("%d", &n2);
     printf("Enter Number3: "); scanf("%d", &n3);

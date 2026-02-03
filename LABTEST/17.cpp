@@ -4,15 +4,14 @@
 void printNumberPyramid(int height)
 {
 	int i,j;
-	for (i = 1; i<= height; i++)
+	for (i = 1;i <= height;i++)
 	{
-		for (j = 0; j < i; j++)
+		for (j = 0;j < i;j++)
 		{
 			printf ("%d",i);
 		}
 		printf ("\n");
 	}
-	
 }
 
 main() 
