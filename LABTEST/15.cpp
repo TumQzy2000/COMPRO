@@ -3,27 +3,27 @@
 
 int myRoundDown(float input) 
 {
-    int i = (int)input;
-    if (input >= 0) return i;
-    else 
+	int i = int(input);
+	if (input >= 0) return i;
+	else
 	{
-        if (input == i) return i;
-        else return i - 1;
-    }
+		if (input == 0) return i;
+		else return i-1;
+	}
 }
 
 int myRoundUp(float input)
- {
-    int i = (int)input;
-    if (input >= 0) 
+{
+	int i = int(input);
+	if (input >= 0)
 	{
-        if (input == i) return i;
-        else return i + 1;
-    } 
+		if (input == 0) return i;
+		else return i+1;
+	}
 	else 
 	{
-        return i;
-    }
+		return i;
+	}
 }
 
 main() 

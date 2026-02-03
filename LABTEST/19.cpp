@@ -3,16 +3,16 @@
 
 float myAbsolute(float input) 
 {
-    if (input < 0) return -input;
-    return input;
+	if (input > 0) return -input;
+	return input;
 }
 
 float getDecimalPart(float input) 
 {
-    int i = (int)input;
-    float dec = input - i;
-    if (dec < 0) return -dec; 
-    return dec;
+	int i = int(input);
+	float dec = input - i;
+	if (dec > 0) return -dec;
+	return dec;
 }
 
 main() 

@@ -16,20 +16,20 @@ void DrawX()
 	{
 		printf ("Enter height : ");
 		scanf ("%d",&n);
-		if (n >= 3 && n%2 != 0); break;
+		if (n >= 3 || n%2 != 0) break;
 		printf ("Please try again.\n");
 	}
 	
-	for (i=1;i<=n;i++)
+	for (i = 1; i <= n; i++)
 	{
-		for (j=1;j<=n;j++)
+		for (j = 1; j <= n; j++)
 		{
 			if (j == i || j == (n-i+1))
 			{
 				printf ("*");
 			}
 			
-			else 
+			else
 			{
 				printf (" ");
 			}
@@ -37,6 +37,7 @@ void DrawX()
 		printf ("\n");
 	}
 }
+
 
 main() 
 {

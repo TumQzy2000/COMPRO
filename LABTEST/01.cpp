@@ -9,17 +9,16 @@ void Menu()
 	printf ("Press 2 to exit.\n");
 }
 
-void CheckPassword()
+void CheckPassword ()
 {
 	int pw;
 	printf ("Create your password : ");
 	scanf ("%d",&pw);
 	
-	if ((pw <= 9999) && (pw >= 1000))
+	if ((pw >= 1000) && (pw <= 9999))
 	{
 		printf ("Your password is already set.\n");
 	}
-	
 	else
 	{
 		printf ("Your password is against the rule. Please try again.\n");
@@ -35,7 +34,7 @@ main()
 		choice = getch();
 		printf ("%c\n",choice);
 		
-		if (choice == '1')
+		if (choice == '1')	
 		{
 			CheckPassword();
 			exit(0);
@@ -49,10 +48,10 @@ main()
 		
 		else
 		{
-			printf ("Wrong choice. Please try again.");
+			printf ("Wrong choice. Please try again.\n");
 		}
-	getch();
-	system ("cls");
+		getch();
+		system ("cls");
 	}
 	getch();
 }
