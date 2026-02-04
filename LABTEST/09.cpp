@@ -16,7 +16,7 @@ void DrawX()
 	{
 		printf ("Enter height : ");
 		scanf ("%d",&n);
-		if (n >= 3 || n%2 != 0) break;
+		if (n <= 3 || n%2 != 0) break;
 		printf ("Please try again.\n");
 	}
 	
