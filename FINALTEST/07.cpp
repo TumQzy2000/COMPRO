@@ -5,11 +5,11 @@
 
 int getColor(char c[]) 
 {
-    if(strcmp(c, "black")==0) return 0;   if(strcmp(c, "brown")==0) return 1;
-    if(strcmp(c, "red")==0) return 2;     if(strcmp(c, "orange")==0) return 3;
-    if(strcmp(c, "yellow")==0) return 4;  if(strcmp(c, "green")==0) return 5;
-    if(strcmp(c, "blue")==0) return 6;    if(strcmp(c, "purple")==0) return 7;
-    if(strcmp(c, "grey")==0) return 8;    if(strcmp(c, "white")==0) return 9;
+    if(strcmp(c, "black") ==0) return 0;   if(strcmp(c, "brown")==0) return 1;
+    if(strcmp(c, "red") ==0) return 2;     if(strcmp(c, "orange")==0) return 3;
+    if(strcmp(c, "yellow") ==0) return 4;  if(strcmp(c, "green")==0) return 5;
+    if(strcmp(c, "blue") ==0) return 6;    if(strcmp(c, "purple")==0) return 7;
+    if(strcmp(c, "grey") ==0) return 8;    if(strcmp(c, "white")==0) return 9;
     return 0;
 }
 

@@ -13,22 +13,22 @@ main()
 	{
         printf("Enter window size: ");
         scanf("%d", &w);
-        if(w < 3 || w > 6) printf("Window size is invalid. Please try again.\n");
-    } while(w < 3 || w > 6);
+    	if (w != 3 && w != 5) printf("Window size is invalid. Please try again.\n");
+    } while (w != 3 && w != 5);
 
-    int offset = w / 2;
+    int offset = (w - 1) / 2;
     for(i = 0; i < 7; i++) pad[i + offset] = x[i];
 
-    printf("Result of max filter: ");
-    for(i = 0; i < 7; i++) 
-	{
-        max = pad[i];
-        for(j = 1; j < w; j++) 
+ 	printf ("Result of max filter : ");
+ 	for (i = 0; i < 7; i++)
+ 	{
+		max = pad[i + j];
+		for (j = 1; j < w; j++) 
 		{
-            if(pad[i + j] > max) max = pad[i + j];
-        }
-        printf("%d ", max);
-    }
+			if (pad[i + j] > max) max = pad[i + j];
+		}
+		printf ("%d",max);
+	}
     
     printf("\n");
     getch();

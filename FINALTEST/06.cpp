@@ -4,20 +4,23 @@
 
 void findRoots(float a, float b, float c, float *r1, float *i1, float *r2, float *i2) 
 {
-    float d = (b * b) - (4 * a * c);
-    if (d >= 0) 
+	float d = (b *b) - (4 * a * c);
+	
+	if (d >= 0)
 	{
-        *r1 = (-b + sqrt(d)) / (2 * a);
-        *r2 = (-b - sqrt(d)) / (2 * a);
-        *i1 = 0; *i2 = 0;
-    } 
-	else 
+		*r1 = (-b + sqrt(d)) / (2 * a);
+		*r2 = (-b - sqrt(d)) / (2 * a);
+		*i1 = 0;
+		*i2 = 0;
+	}
+	
+	else
 	{
-        *r1 = -b / (2 * a);
-        *r2 = -b / (2 * a);
-        *i1 = sqrt(-d) / (2 * a);
-        *i2 = -sqrt(-d) / (2 * a);
-    }
+		*r1 = -b / (2 * a);
+		*r2 = -b / (2 * a);
+		*i1 = sqrt(-d) / (2 * a);
+		*i2 = -sqrt(-d) / (2 * a);
+	}
 }
 
 main() 
