@@ -2,23 +2,23 @@
 #include "conio.h"
 
 int x[7], pad[15] = {0};
-int w, i, j;
+int i,w,j;
 float sum;
 
-main() 
+main()
 {
 	printf ("Enter X : ");
-	for (i = 0; i < 7; i++) scanf ("%d",x[i]);
+	for (i = 0; i < 7; i++) scanf ("%d",&x[i]);
 	
 	do
 	{
-		printf ("Enter window size");
+		printf ("Enter window size : ");
 		scanf ("%d",&w);
-    	if (w != 3 && w != 5) printf("Window size is invalid. Please try again.\n");
-    } while (w != 3 && w != 5);
-
-    int offset = (w - 1) / 2;
-	for (i = 0; i < 7; i++) pad[i + offset] = x[i];
+		if (w != 3 && w != 5) printf ("Window size is invalid. Please try again.\n");
+	}while (w != 3 && w != 5);
+	
+	int offset = w / 2;
+	for (i = 0; i < 7; i++) pad [i + offset] = x[i];
 	
 	printf ("Result of average filter : ");
 	for (i = 0; i < 7; i++)
@@ -27,7 +27,8 @@ main()
 		for (j = 0; j < w; j++) sum += pad[i + j];
 		printf ("%.2f ",sum / w);
 	}
-    
-    printf("\n");
-    getch();
+	
+	printf ("/n");
+	getch();
 }
+

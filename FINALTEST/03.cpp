@@ -23,11 +23,11 @@ main()
  	for (i = 0; i < 7; i++)
  	{
  		min = pad[i];
- 		for (j = 1; j < w; j++)
+ 		for (j = 0; j < w; j++)
  		{
- 			if (pad[i + j] < min) min = pad[i +j];
+ 			if (pad[i + j] < min) min = pad[i + j];
 		}
-		printf ("%d",min);
+		printf ("%d ",min);
 	}
  	
     printf("\n");

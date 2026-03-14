@@ -22,10 +22,10 @@ main()
  	printf ("Result of max filter : ");
  	for (i = 0; i < 7; i++)
  	{
-		max = pad[i + j];
-		for (j = 1; j < w; j++) 
+		max = pad[i];
+		for (j = 0; j < w; j++)
 		{
-			if (pad[i + j] > max) max = pad[i + j];
+			if (pad[i + j] > max) max = pad [i +j];
 		}
 		printf ("%d",max);
 	}

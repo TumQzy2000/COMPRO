@@ -24,16 +24,21 @@ main()
 
     while(1) 
 	{
-        printf("\n*** Main Menu ***\n");
+		printf ("*******************\n");
+        printf("   Main Menu   \n");
+        printf ("*******************\n");
 		printf("1. Delta to Wye\n");
 		printf("2. Wye to Delta\n");
 		printf("3. Exit\n");
+		printf ("*******************\n");
 		printf("Enter Menu: ");
         scanf("%d", &menu);
+        printf ("\n");
         
         
         if(menu == 1) 
 		{
+			printf ("-- Delta to Wye --\n");
   			printf ("Enter R1 : "); scanf ("%f", &r1);
   			printf ("Enter R2 : "); scanf ("%f", &r2);
   			printf ("Enter R3 : "); scanf ("%f", &r3);
@@ -43,6 +48,7 @@ main()
         
 		else if(menu == 2) 
 		{
+			printf ("-- Wye to Delta --\n");
             printf("Enter RA : "); scanf("%f", &ra);
             printf("Enter RB : "); scanf("%f", &rb);
             printf("Enter RC : "); scanf("%f", &rc);
