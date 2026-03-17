@@ -1,35 +1,35 @@
 #include "stdio.h"
 #include "conio.h"
 
-int x[7], pad[15] = {0}; 
-int w, i, j, max;
+int x[7], pad[15] = {0};
+int i,j,w,max;
 
-main() 
+main()
 {
-    printf("Enter X: ");
-    for(i = 0; i < 7; i++) scanf("%d", &x[i]);
-
-    do 
+	printf ("Enter X : ");
+	for (i = 0; i < 7; i++) scanf ("%d", &x[i]);
+	
+	do
 	{
-        printf("Enter window size: ");
-        scanf("%d", &w);
-    	if (w != 3 && w != 5) printf("Window size is invalid. Please try again.\n");
-    } while (w != 3 && w != 5);
-
-    int offset = (w - 1) / 2;
-    for(i = 0; i < 7; i++) pad[i + offset] = x[i];
-
- 	printf ("Result of max filter : ");
- 	for (i = 0; i < 7; i++)
- 	{
+		printf ("Enter window size : ");
+		scanf ("%d", &w);
+		if (w != 3 && w != 5) printf ("Window size is invalid. Please try again.\n");
+	}while (w != 3 && w != 5);
+	
+	int offset = (w-1) / 2;
+	for (i = 0; i < 7; i++) pad[i + offset] = x[i];
+	
+	printf ("Result of max filter : ");
+	for (i = 0; i < 7; i++) 
+	{
 		max = pad[i];
 		for (j = 0; j < w; j++)
 		{
-			if (pad[i + j] > max) max = pad [i +j];
+			if (pad[i + j] > max) max = pad[i + j];
 		}
-		printf ("%d",max);
+		printf ("%d", max);
 	}
-    
-    printf("\n");
-    getch();
+	
+	printf ("\n");
+	getch();
 }
