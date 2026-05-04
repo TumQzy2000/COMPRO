@@ -16,12 +16,12 @@ void DrawTriangle()
 	
 	while(n <= 1)
 	{
-		printf ("Please try agian.\n");
+		printf ("Please try again.\n");
 		printf ("Enter height : ");
 		scanf ("%d",&n);
 	}
 	
-	for (i = n;i >= 1;i--)
+	for (i = n;i >= 1;i++)
 	{
 		for (j = 1;j <= n-i;j++)
 		{
@@ -32,7 +32,7 @@ void DrawTriangle()
 			printf ("#");
 		}
 		printf ("\n");
-	}	
+	}
 }
 
 main()

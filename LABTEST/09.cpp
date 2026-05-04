@@ -12,6 +12,7 @@ void Menu()
 void DrawX()
 {
 	int n,i,j;
+	
 	while(1)
 	{
 		printf ("Enter height : ");

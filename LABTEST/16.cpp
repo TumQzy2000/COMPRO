@@ -4,7 +4,7 @@
 void printStar(int max_stars)
 {
 	int i,j;
-	for (i = 1;i <= max_stars;i++)
+	for (i =  1;i <= max_stars;i++)
 	{
 		for (j = 0;j < i;j++) printf ("*");
 		printf ("\n");

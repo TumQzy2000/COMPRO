@@ -13,8 +13,8 @@ void DrawTriangle()
 	int n,i,j;
 	printf ("Enter N : ");
 	scanf ("%d",&n);
-	
-	while (n <= 1)
+	 
+	while(n <= 1)
 	{
 		printf ("Please try again.\n");
 		printf ("Enter height : ");
